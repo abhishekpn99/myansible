@@ -4,7 +4,7 @@
 - hosts: web
   become: yes
   vars: 
-    username: akhil
+    username: ec2-user
     doc_root: /var/www/html
   tasks:
 
