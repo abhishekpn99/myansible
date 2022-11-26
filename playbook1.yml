@@ -1,6 +1,6 @@
 ---
 - hosts: testserver
-  become_user: kslave1
+  become_user: edureka
   tasks:
   - name: install httpd
     yum: name=httpd state=present
