@@ -1,6 +1,5 @@
 ---
 - hosts: testserver
-  become: true
   become_user: edureka
   tasks:
   - name: install httpd
