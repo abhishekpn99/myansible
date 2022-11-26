@@ -1,3 +1,2 @@
-[webservers]
-172.31.13.209 ansible_user=ec2-user
-
+[testserver]
+172.31.18.44 ansible_user=edureka
