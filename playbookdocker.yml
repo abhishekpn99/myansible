@@ -1,7 +1,7 @@
 ---
 - hosts: webservers
   become: true
-  become_user: edureka
+  become_user: root
   tasks:
   - name: install tomcat
     yum: name=tomcat state=present
@@ -14,7 +14,7 @@
   - name: install git
     yum: name=git state=present
   - name: clone a repo
-    git: repo=https://github.com/Sonal0409/AnsibleDockerdemo.git dest=/tmp/mygitrepo1
+    git: repo=https://github.com/muruganandam08/AnsibleDockerdemo.git dest=/tmp/mygitrepo1
   - name: build docker file
     command: chdir=/tmp/mygitrepo1 docker build -t myadd:ansible2 .
   - name: create container
