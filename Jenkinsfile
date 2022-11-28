@@ -5,7 +5,7 @@ pipeline{
         {
           
             steps{
-                git branch: 'main', url: 'https://github.com/muruganandam08/myansible'
+                git branch: 'main', url: 'https://github.com/abhishekpn99/myansible.git'
             }
         }
         stage('Ansible playbook')
